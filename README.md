@@ -2,9 +2,14 @@
 
 Shows how to build project using sbt
 
+to run regular build and assembly
+```
+sbt clean package assembly
+```
+
 ## Assembly
 
-make uber jar using Assembly plugin
+to make uber jar using Assembly plugin
 ```
 sbt assembly
 ```
@@ -12,11 +17,11 @@ Assembly jar should not include Provided jars
 
 setting.sbt assemblyExcludedJars allows to exclude jars directly
 
-build.sbt dependencyOverrides allws to select correct jar versions
+build.sbt dependencyOverrides allows to select correct jar versions
 
 ## Dependency Graph
 
-Show dependency tree using net.virtual-void.sbt-dependency-graph plugin
+to how dependency tree
 ```
 # ASCII
 sbt dependency-graph
